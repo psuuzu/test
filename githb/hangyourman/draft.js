@@ -1,5 +1,5 @@
 
-//i dont know why, but when you run this on browser, reload once so the first set of texts will appear on console
+//when you run this on browser, reload once so the first set of texts will appear on console
 let wordvault = ["store","nice","okay","toy","please","hello","stop","turn","account","university","loss","make"]
 // database of the twelve preset words
 let randomword = wordvault[Math.floor(Math.random()*12)]
