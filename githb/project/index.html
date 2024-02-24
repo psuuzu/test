@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>movement program</title>
+    <link rel="stylesheet" href="csscript.css">
+</head>
+<body>
+    <!--use tables to separate drawing space from other buttons and functions--> 
+    <table>
+        <!--drawing space on the left and other contents on the right-->
+  
+        <tr>
+            <th class="column1"></th>
+            <th class="column2">click to move</th>
+        </tr>
+        <tr>
+            <th class = "column1"></th>
+            <th class = "column2">
+                <!--buttons are a child of <section> so i can organise them better in CSS-->
+                <section>
+                    <button onclick = "up()">up</button>
+                    <button onclick = "down()">down</button>
+                    <button onclick = "left()">left</button>
+                    <button onclick = "right()">right</button>
+                </section>
+            </th>
+        </tr>
+        <tr>
+            <th class="column1"></th>
+            <!--user is instructed to input using initials (eg. "u" for up) which is faster than typing whole word-->
+            <th class="column2">enter program
+                using initials (u,d,l,r)
+                for example 
+                <p>3up 2left = uuull</p>
+            </th>
+        </tr>
+        <tr>
+            <th class="column1"></th>
+            <th class="column2">
+                <textarea id = "userinput" rows = "8"></textarea>
+                <button onclick = "run()">run</button>
+            </th>
+        </tr>
+    </table>
+
+    <script src="jscript.js"></script>
+</body>
+</html>
